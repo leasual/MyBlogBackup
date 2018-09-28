@@ -1,0 +1,208 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>逐梦的脚步</title><description>竹杖芒鞋轻胜马，谁怕？</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>逐梦的脚步</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Fri, 28 Sep 2018 13:56:56 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>不迈出第一步，那么你将永远到达不了第九十九步</title><description>&lt;p&gt;最近一直在思考一个问题，就是什么时候可以不上班养活自己，&lt;br&gt;
+那么就可以开始自己第独立开发之路了。&lt;br&gt;
+思考了那么久，可能有大半年了吧。&lt;br&gt;
+但是一直没有迈出自己第第一步，&lt;br&gt;
+一直拖着，拖着，慢慢的，感觉信心越来越不足，&lt;br&gt;
+在这么耗下去，估计今后几年都不会有结果，就如这个博客一样。&lt;br&gt;
+荒废了好几年了。&lt;br&gt;
+所以，这一次，&lt;br&gt;
+我要开始了，迈出神圣的第一步，这样，才有可能达到第九十九步。&lt;br&gt;
+浑浑噩噩，度日如年，&lt;br&gt;
+不如时时刻刻，奋斗不息，&lt;br&gt;
+只有这样，&lt;br&gt;
+才会会给自己的未来几年一个交代。&lt;br&gt;
+加油吧。骚年！&lt;br&gt;
+梦，永远不会停止。&lt;/p&gt;</description><link>http://localhost:2368/bu-mai-chu-di-yi-bu-na-yao-ni-jiang-yong-yuan-dao-da-bu-liao-di-jiu-shi-jiu-bu/</link><guid isPermaLink="false">5bae2dc79d96bc031390d9af</guid><category>杂记</category><dc:creator>James.Li</dc:creator><pubDate>Wed, 26 Sep 2018 07:31:05 GMT</pubDate><media:content url="http://localhost:2368/content/images/2018/09/sharon-mccutcheon-659776-unsplash.jpg" medium="image"/><content:encoded>&lt;img src="http://localhost:2368/content/images/2018/09/sharon-mccutcheon-659776-unsplash.jpg" alt="不迈出第一步，那么你将永远到达不了第九十九步"&gt;&lt;p&gt;最近一直在思考一个问题，就是什么时候可以不上班养活自己，&lt;br&gt;
+那么就可以开始自己第独立开发之路了。&lt;br&gt;
+思考了那么久，可能有大半年了吧。&lt;br&gt;
+但是一直没有迈出自己第第一步，&lt;br&gt;
+一直拖着，拖着，慢慢的，感觉信心越来越不足，&lt;br&gt;
+在这么耗下去，估计今后几年都不会有结果，就如这个博客一样。&lt;br&gt;
+荒废了好几年了。&lt;br&gt;
+所以，这一次，&lt;br&gt;
+我要开始了，迈出神圣的第一步，这样，才有可能达到第九十九步。&lt;br&gt;
+浑浑噩噩，度日如年，&lt;br&gt;
+不如时时刻刻，奋斗不息，&lt;br&gt;
+只有这样，&lt;br&gt;
+才会会给自己的未来几年一个交代。&lt;br&gt;
+加油吧。骚年！&lt;br&gt;
+梦，永远不会停止。&lt;/p&gt;
+</content:encoded></item><item><title>编译OpenWrt烧录树莓派3B</title><description>&lt;p&gt;编译OpenWrt-LEDE版本&lt;br&gt;在OpenWRT 15.05以后已经更换为LEDE。&lt;br&gt;编译环境&lt;br&gt;Ubuntu 16.04&lt;br&gt;设备&lt;br&gt;树莓派3 Mode B一个&lt;br&gt;编译&lt;/p&gt;&lt;p&gt;1) 准备环境 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial &lt;/p&gt;&lt;p&gt;2) 下载源码 git clone &lt;a href="https://git.lede-project.org/source.git"&gt;https://git.lede-project.org/source.git&lt;/a&gt; &lt;/p&gt;&lt;p&gt;3)  更新所有包依赖 ./scripts/feeds update -a &lt;/p&gt;&lt;p&gt;4)  安装所有包依赖 ./scripts/feeds&lt;/p&gt;</description><link>http://localhost:2368/bian-yi-openwrtshao-lu-shu-mei-pai-3b/</link><guid isPermaLink="false">5bae2dc79d96bc031390d9ae</guid><category>杂记</category><dc:creator>James.Li</dc:creator><pubDate>Wed, 19 Jul 2017 06:44:00 GMT</pubDate><media:content url="http://localhost:2368/content/images/2018/09/diego-jimenez-258120-1.jpg" medium="image"/><content:encoded>&lt;img src="http://localhost:2368/content/images/2018/09/diego-jimenez-258120-1.jpg" alt="编译OpenWrt烧录树莓派3B"&gt;&lt;p&gt;编译OpenWrt-LEDE版本&lt;br&gt;在OpenWRT 15.05以后已经更换为LEDE。&lt;br&gt;编译环境&lt;br&gt;Ubuntu 16.04&lt;br&gt;设备&lt;br&gt;树莓派3 Mode B一个&lt;br&gt;编译&lt;/p&gt;&lt;p&gt;1) 准备环境 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial &lt;/p&gt;&lt;p&gt;2) 下载源码 git clone &lt;a href="https://git.lede-project.org/source.git"&gt;https://git.lede-project.org/source.git&lt;/a&gt; &lt;/p&gt;&lt;p&gt;3)  更新所有包依赖 ./scripts/feeds update -a &lt;/p&gt;&lt;p&gt;4)  安装所有包依赖 ./scripts/feeds install -a &lt;/p&gt;&lt;p&gt;5)  检查配置 make defconfig &lt;/p&gt;&lt;p&gt;6)  修改编译选项 &lt;/p&gt;&lt;p&gt;我们使用命令make menuconfig会进入一个定制内核的界面， 因为我们使用的是树莓派3B,所以我们需要修改的地方主要有以下3点： . Target System -&amp;gt; Broadcom BCM27xx . SubTarget -&amp;gt; BCM2710 64 bit based boards . Target Profile -&amp;gt; (Raspberry Pi 3) B (64 bit) &lt;/p&gt;&lt;p&gt;为了确保编译通过，在这里我们其他的暂时不进行修改，保持默认选项即可。修改完的界面如下图：&lt;/p&gt;&lt;figure class="kg-card kg-image-card"&gt;&lt;img src="http://localhost:2368/content/images/2018/09/custom_kernel.jpg" class="kg-image" alt="编译OpenWrt烧录树莓派3B"&gt;&lt;/figure&gt;&lt;p&gt;使用键盘方向键选择Save保存后即可。&lt;/p&gt;&lt;p&gt;7) 开始编译 &lt;/p&gt;&lt;p&gt;make V=s -j4 V=s 表示输出全部编译信息，j4表示使用4个线程。正常情况下，等待1~2个小时，即可完成编译，这是在 source(你的源码更目录) -&amp;gt; bin -&amp;gt; targets -&amp;gt; brcm2708 -&amp;gt; brcm2710目录下会有lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img.gz这个文件。 &lt;/p&gt;&lt;p&gt;8) 烧录 &lt;/p&gt;&lt;p&gt;在ubuntu系统下使用dd命令将lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img.gz解压后得到的imagelede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img文件写入到sdcard中。具体命令为 sudo dd if=/home/james/Desktop/lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img of=/dev/sdb bs=4M 将sdcard插回树莓派，开机，正常情况下系统就可以工作起来了，当然这时路由功能其实还没法使用。 &lt;/p&gt;&lt;p&gt;9) 开机调试 &lt;/p&gt;&lt;p&gt;使用网线插入树莓派另一端与电脑连接，使用ssh方式连接树莓派，这里我使用PUTTY。然后修改相关文件。 &lt;/p&gt;&lt;h3 id="1-vim-etc-config-network-"&gt;1.修改vim /etc/config/network，将内容改为：&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;    config interface 'loopback' 
+    option ifname 'lo' 
+    option proto 'static' 
+    option ipaddr '127.0.0.1' 
+    option netmask '255.0.0.0'
+    config globals 'globals'
+    option ula_prefix 'fd11:8629:b448::/48'
+    config interface 'lan'
+    option type 'bridge'
+    option ifname 'eth0'
+    option proto 'static'
+    option ipaddr '192.168.2.1'
+    option netmask '255.255.255.0'
+    option ip6assign '60'
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="2-vim-etc-config-wireless-"&gt;&lt;br&gt;2. 同理修改 vim /etc/config/wireless将内容修改为：&lt;br&gt;&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;config wifi-device radio0
+        option type     mac80211
+        option channel  11
+        option hwmode   11g
+        option path 'platform/soc/3f300000.mmc/mmc_host/mmc1/mmc1:0001/mmc1:0001:1'
+        option htmode   HT20
+        # REMOVE THIS LINE TO ENABLE WIFI:
+#        option disabled 0
+
+config wifi-iface
+        option device   radio0
+        option network  lan
+        option mode     ap
+        option ssid     [yourname] #这里输入wifi名
+        option encryption psk2
+        option key      [yourwifikey] #这里输入wifi密码 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="3-wan-ssh"&gt;&lt;br&gt;3. 允许通过wan连接ssh &lt;/h3&gt;&lt;p&gt;vim /etc/config/firewall修改为：&lt;/p&gt;&lt;pre&gt;&lt;code&gt;#open ssh on wan interface
+config rule                
+        option src              wan
+        option dest_port        22
+        option target           ACCEPT     
+        option proto 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;. 安装luci，安装后可以通过浏览器去访问路由&lt;br&gt;&lt;code&gt;/etc/init.d/uhttpd start&lt;/code&gt;&lt;br&gt;&lt;code&gt;/etc/init.d/uhttpd enable&lt;/code&gt;&lt;br&gt;到此就可以访问路由了。重启树莓派，将网线接入路由器，这时候我们查看无线网络应该就可以使用了。&lt;/p&gt;&lt;p&gt;到时这样配置感觉好麻烦，我们能否在编译之前配置好，编译完烧录进树莓派之后不需要配置任何东西，马上可以使用呢？答案是肯定的，下面我们来实现。&lt;/p&gt;&lt;p&gt;配置默认设置&lt;/p&gt;&lt;p&gt;1. 配置luci make menuconfig &lt;/p&gt;&lt;p&gt;&lt;code&gt;LuCI -&amp;gt; 1. Collections -&amp;gt; 选择luci&lt;/code&gt;&lt;br&gt;&lt;code&gt;LuCI -&amp;gt; 1. Collections -&amp;gt; 选择luci-ssl&lt;/code&gt;&lt;/p&gt;&lt;p&gt;2. 配置network /home/james/RasPI/source/package/basefiles/files/bin/config_generate修改 &lt;/p&gt;&lt;pre&gt;&lt;code&gt;generate_static_network() {
+    uci -q batch &amp;lt;&amp;lt;-EOF
+        delete network.loopback
+        set network.loopback='interface'
+        set network.loopback.ifname='lo'
+        set network.loopback.proto='static'
+        set network.loopback.ipaddr='127.0.0.1'
+        set network.loopback.netmask='255.0.0.0'
+        delete network.globals
+        set network.globals='globals'
+        set network.globals.ula_prefix='auto'
+        #添加以下设置
+        delete network.wan
+        set network.wan='interface'
+        set network.wan.proto='dhcp'
+        set network.wan.ifname='eth0'
+    EOF
+}
+generate_network() {
+    local ifname macaddr protocol type ipaddr netmask
+
+    json_select network
+        json_select "$1"
+            json_get_vars ifname macaddr protocol ipaddr netmask
+        json_select ..
+    json_select ..
+
+    [ -n "$ifname" ] || return
+
+    # force bridge for multi-interface devices (and lan)
+    case "$1:$ifname" in
+        *\ * | lan:*) type="bridge" ;;
+    esac
+
+    uci -q batch &amp;lt;&amp;lt;-EOF
+        delete network.$1
+        set network.$1='interface'
+        set network.$1.type='$type'
+        set network.$1.proto='none'
+    EOF
+
+    [ -n "$macaddr" ] &amp;amp;&amp;amp; uci -q batch &amp;lt;&amp;lt;-EOF
+        delete network.$1_dev
+        set network.$1_dev='device'
+        set network.$1_dev.name='$ifname'
+        set network.$1_dev.macaddr='$macaddr'
+    EOF
+
+    case "$protocol" in
+        static)
+            local ipad
+            case "$1" in
+                #修改IP地址
+                lan) ipad=${ipaddr:-"192.168.2.1"} ;;
+                *) ipad=${ipaddr:-"192.168.$((addr_offset++)).1"} ;;
+            esac
+
+            netm=${netmask:-"255.255.255.0"}
+
+            uci -q batch &amp;lt;&amp;lt;-EOF
+                #删除ifname选项
+                set network.$1.proto='static'
+                set network.$1.ipaddr='$ipad'
+                set network.$1.netmask='$netm'
+                set network.$1.ip6assign='60'
+            EOF
+        ;;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; &lt;/p&gt;&lt;p&gt;3. 配置无线网络 /home/james/RasPI/source/package/kernel/mac80211/files/lib/mac80211.sh &lt;/p&gt;&lt;pre&gt;&lt;code&gt;detect_mac80211() {
+    devidx=0
+    config_load wireless
+    while :; do
+        config_get type "radio$devidx" type
+        [ -n "$type" ] || break
+        devidx=$(($devidx + 1))
+    done
+
+    for _dev in /sys/class/ieee80211/*; do
+        [ -e "$_dev" ] || continue
+
+        dev="${_dev##*/}"
+
+        found=0
+        config_foreach check_mac80211_device wifi-device
+        [ "$found" -gt 0 ] &amp;amp;&amp;amp; continue
+
+        mode_band="g"
+        channel="11"
+        htmode=""
+        ht_capab=""
+
+        iw phy "$dev" info | grep -q 'Capabilities:' &amp;amp;&amp;amp; htmode=HT20
+        iw phy "$dev" info | grep -q '2412 MHz' || { mode_band="a"; channel="36"; }
+
+        vht_cap=$(iw phy "$dev" info | grep -c 'VHT Capabilities')
+        cap_5ghz=$(iw phy "$dev" info | grep -c "Band 2")
+        [ "$vht_cap" -gt 0 -a "$cap_5ghz" -gt 0 ] &amp;amp;&amp;amp; {
+            mode_band="a";
+            channel="36"
+            htmode="VHT80"
+        }
+
+        [ -n $htmode ] &amp;amp;&amp;amp; ht_capab="set wireless.radio${devidx}.htmode=$htmode"
+
+        if [ -x /usr/bin/readlink -a -h /sys/class/ieee80211/${dev} ]; then
+            path="$(readlink -f /sys/class/ieee80211/${dev}/device)"
+        else
+            path=""
+        fi
+        if [ -n "$path" ]; then
+            path="${path##/sys/devices/}"
+            case "$path" in
+                platform*/pci*) path="${path##platform/}";;
+            esac
+            dev_id="set wireless.radio${devidx}.path='$path'"
+        else
+            dev_id="set wireless.radio${devidx}.macaddr=$(cat /sys/class/ieee80211/${dev}/macaddress)"
+        fi
+
+        uci -q batch &amp;lt;&amp;lt;-EOF
+            set wireless.radio${devidx}=wifi-device
+            set wireless.radio${devidx}.type=mac80211
+            set wireless.radio${devidx}.channel=${channel}
+            set wireless.radio${devidx}.hwmode=11${mode_band}
+            ${dev_id}
+            ${ht_capab}
+            #设置默认wifi名称、加密方式、密码
+            set wireless.default_radio${devidx}=wifi-iface
+            set wireless.default_radio${devidx}.device=radio${devidx}
+            set wireless.default_radio${devidx}.network=lan
+            set wireless.default_radio${devidx}.mode=ap
+            set wireless.default_radio${devidx}.ssid=Your_RAPI
+            set wireless.default_radio${devidx}.encryption=psk2
+            set wireless.default_radio${devidx}.key=test1234567
+EOF
+        uci -q commit wireless
+
+        devidx=$(($devidx + 1))
+    done
+}  &lt;/code&gt;&lt;/pre&gt;&lt;h3 id="4-"&gt;&lt;br&gt;4. 配置防火墙&lt;/h3&gt;&lt;p&gt;/home/james/RasPI/source/package/network/config/firewall/firewall.config&lt;/p&gt;&lt;pre&gt;&lt;code&gt;#open ssh on wan interface
+config rule                
+        option src              wan
+        option dest_port        22
+        option target           ACCEPT     
+        option proto&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="5-"&gt;5. 修改完以上几个文件，重新编译，然后烧录到树莓派，搞定。&lt;/h3&gt;&lt;p&gt;开机接上网线，不需要任何设置，就可以畅享无线网络了。你也可以通过浏览器访问路由器主页了。&lt;br&gt;到此就暂时告一段落了。&lt;/p&gt;</content:encoded></item><item><title>Ghost 打造自己的博客系统</title><description>&lt;p&gt;1. 安装工具&lt;/p&gt;&lt;p&gt;a 安装pip 通过命令 brew install pip&lt;/p&gt;&lt;p&gt;b 安装NodeJS 通过命令 brew install node&lt;/p&gt;&lt;p&gt;c 安装Buster 通过命令 pip install buster (Buster主要用于生成static静态页面，提交到GitHub，使得可以访问)&lt;/p&gt;&lt;p&gt;2. 下载&lt;a href="https://ghost.org/developers/"&gt;Ghost&lt;/a&gt;文件，解压进入目录&lt;/p&gt;&lt;p&gt;a 执行命令 npm install &lt;/p&gt;&lt;p&gt;b 执行命令 npm start&lt;/p&gt;&lt;p&gt;c 现在你可以打开网页输入地址 &lt;a href="http://localhost:2368"&gt;http://localhost:2368&lt;/a&gt; 即可看到界面。&lt;/p&gt;&lt;p&gt;3. 重新打开一个命令窗口，使用一下命令生成静态文件：&lt;/p&gt;&lt;p&gt;a buster setup 这时会提示你输入repository URL&lt;/p&gt;</description><link>http://localhost:2368/ghost-da-zao-zi-ji-de-bo-ke-xi-tong/</link><guid isPermaLink="false">5bae2dc79d96bc031390d9ad</guid><category>杂记</category><dc:creator>James.Li</dc:creator><pubDate>Sat, 01 Jul 2017 06:32:00 GMT</pubDate><media:content url="http://localhost:2368/content/images/2018/09/tim-mossholder-666762-unsplash-1.jpg" medium="image"/><content:encoded>&lt;img src="http://localhost:2368/content/images/2018/09/tim-mossholder-666762-unsplash-1.jpg" alt="Ghost 打造自己的博客系统"&gt;&lt;p&gt;1. 安装工具&lt;/p&gt;&lt;p&gt;a 安装pip 通过命令 brew install pip&lt;/p&gt;&lt;p&gt;b 安装NodeJS 通过命令 brew install node&lt;/p&gt;&lt;p&gt;c 安装Buster 通过命令 pip install buster (Buster主要用于生成static静态页面，提交到GitHub，使得可以访问)&lt;/p&gt;&lt;p&gt;2. 下载&lt;a href="https://ghost.org/developers/"&gt;Ghost&lt;/a&gt;文件，解压进入目录&lt;/p&gt;&lt;p&gt;a 执行命令 npm install &lt;/p&gt;&lt;p&gt;b 执行命令 npm start&lt;/p&gt;&lt;p&gt;c 现在你可以打开网页输入地址 &lt;a href="http://localhost:2368"&gt;http://localhost:2368&lt;/a&gt; 即可看到界面。&lt;/p&gt;&lt;p&gt;3. 重新打开一个命令窗口，使用一下命令生成静态文件：&lt;/p&gt;&lt;p&gt;a buster setup 这时会提示你输入repository URL 这个URL就是你的在GitHub上创建的GitHub Page的仓库地址，如&lt;a href="https://github.com/leasual/leasual.github.io.git"&gt;https://github.com/&lt;/a&gt;USER&lt;a href="https://github.com/leasual/leasual.github.io.git"&gt;/&lt;/a&gt;USER&lt;a href="https://github.com/leasual/leasual.github.io.git"&gt;.github.io.git&lt;/a&gt;&lt;/p&gt;&lt;p&gt;b buster generate 执行之后会在Ghost根目录下生成一个static目录，这个目录下的文件就是我们需要推送到代码仓库的文件。&lt;/p&gt;&lt;p&gt;4. 推送静态文件到代码仓库&lt;/p&gt;&lt;p&gt;cd static&lt;br&gt;git init&lt;br&gt;git remote add origin &lt;a href="https://github.com/leasual/leasual.github.io.git"&gt;https://github.com/&lt;/a&gt;USER&lt;a href="https://github.com/leasual/leasual.github.io.git"&gt;/&lt;/a&gt;USER&lt;a href="https://github.com/leasual/leasual.github.io.git"&gt;.github.io.git&lt;/a&gt;&lt;br&gt;git add .&lt;br&gt;git commit -m "Ghost Ready"&lt;br&gt;git push -u origin master -f&lt;/p&gt;&lt;p&gt;5. 设置自己的域名&lt;/p&gt;&lt;p&gt;在static目录下新建一个CNAME文件，文件内容为你的域名www.xxx.com&lt;/p&gt;&lt;p&gt;6. 自定义自己的网站配置：&lt;/p&gt;&lt;p&gt;&lt;a href="http://localhost:2368"&gt;http://localhost:2368&lt;/a&gt;/ghost进入，可以配置。&lt;/p&gt;&lt;p&gt;7. 发布新的文章：&lt;/p&gt;&lt;p&gt;buster generate&lt;br&gt;cd static&lt;br&gt;git add .&lt;br&gt;git commit -m "New Post"&lt;br&gt;git push&lt;/p&gt;&lt;p&gt;基本上就是这样了。&lt;/p&gt;</content:encoded></item></channel></rss>

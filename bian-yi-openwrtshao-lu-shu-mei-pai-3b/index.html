@@ -1,0 +1,579 @@
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>编译OpenWrt烧录树莓派3B</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=9138b390ef">
+
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="逐梦的脚步">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="编译OpenWrt烧录树莓派3B">
+    <meta property="og:description" content="编译OpenWrt-LEDE版本在OpenWRT 15.05以后已经更换为LEDE。编译环境Ubuntu 16.04设备树莓派3 Mode B一个编译1) 准备环境 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial 2) 下载源码 git clone https://git.lede-project.org/source.git 3)  更新所有包依赖 ./scripts/feeds update -a 4)  安装所有包依赖 ./scripts/feeds install -a 5)  检查配置 make defconfig">
+    <meta property="og:url" content="http://localhost:2368/bian-yi-openwrtshao-lu-shu-mei-pai-3b/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2018/09/diego-jimenez-258120-1.jpg">
+    <meta property="article:published_time" content="2017-07-19T06:44:00.000Z">
+    <meta property="article:modified_time" content="2018-09-28T13:55:25.000Z">
+    <meta property="article:tag" content="杂记">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="编译OpenWrt烧录树莓派3B">
+    <meta name="twitter:description" content="编译OpenWrt-LEDE版本在OpenWRT 15.05以后已经更换为LEDE。编译环境Ubuntu 16.04设备树莓派3 Mode B一个编译1) 准备环境 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial 2) 下载源码 git clone https://git.lede-project.org/source.git 3)  更新所有包依赖 ./scripts/feeds update -a 4)  安装所有包依赖 ./scripts/feeds install -a 5)  检查配置 make defconfig">
+    <meta name="twitter:url" content="http://localhost:2368/bian-yi-openwrtshao-lu-shu-mei-pai-3b/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2018/09/diego-jimenez-258120-1.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="James.Li">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="杂记">
+    <meta name="twitter:site" content="@tryghost">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1333">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "逐梦的脚步",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2018/09/man--1--1-2.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "James.Li",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2018/09/man--1--1.png",
+            "width": 256,
+            "height": 256
+        },
+        "url": "http://localhost:2368/author/james/",
+        "sameAs": []
+    },
+    "headline": "编译OpenWrt烧录树莓派3B",
+    "url": "http://localhost:2368/bian-yi-openwrtshao-lu-shu-mei-pai-3b/",
+    "datePublished": "2017-07-19T06:44:00.000Z",
+    "dateModified": "2018-09-28T13:55:25.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2018/09/diego-jimenez-258120-1.jpg",
+        "width": 2000,
+        "height": 1333
+    },
+    "keywords": "杂记",
+    "description": "编译OpenWrt-LEDE版本在OpenWRT 15.05以后已经更换为LEDE。编译环境Ubuntu 16.04设备树莓派3 Mode B一个编译1) 准备环境 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial 2) 下载源码 git clone https://git.lede-project.org/source.git 3)  更新所有包依赖 ./scripts/feeds update -a 4)  安装所有包依赖 ./scripts/feeds install -a 5)  检查配置 make defconfig",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:2368/"
+    }
+}
+    </script>
+
+    <script src="../public/ghost-sdk.js?v=9138b390ef"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "b50d1f9b5e38"
+});
+</script>
+    <meta name="generator" content="Ghost 2.1">
+    <link rel="alternate" type="application/rss+xml" title="逐梦的脚步" href="../rss/index.html">
+
+</head>
+<body class="post-template tag-za-ji">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+                <a class="site-nav-logo" href="../"><img src="../content/images/2018/09/man--1--1-2.png" alt="逐梦的脚步"></a>
+            <ul class="nav" role="menu">
+    <li class="nav-" role="menuitem"><a href="../">独立开发之路</a></li>
+    <li class="nav-ios" role="menuitem"><a href="../tag/ios/">iOS</a></li>
+    <li class="nav-android" role="menuitem"><a href="../tag/android/">Android</a></li>
+    <li class="nav-" role="menuitem"><a href="../tag/za-ji/">杂记</a></li>
+</ul>
+
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+                <a class="social-link social-link-fb" href="https://www.facebook.com/ghost" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+</a>
+                <a class="social-link social-link-tw" href="https://twitter.com/tryghost" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+</a>
+        </div>
+            <a class="rss-button" href="https://feedly.com/i/subscription/feed/http://localhost:2368/rss/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg>
+</a>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-za-ji ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="2017-07-19">19 July 2017</time>
+                        <span class="date-divider">/</span> <a href="../tag/za-ji/">杂记</a>
+                </section>
+                <h1 class="post-full-title">编译OpenWrt烧录树莓派3B</h1>
+            </header>
+
+            <figure class="post-full-image" style="background-image: url(../content/images/2018/09/diego-jimenez-258120-1.jpg)">
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>编译OpenWrt-LEDE版本<br>在OpenWRT 15.05以后已经更换为LEDE。<br>编译环境<br>Ubuntu 16.04<br>设备<br>树莓派3 Mode B一个<br>编译</p><p>1) 准备环境 sudo apt-get update &amp;&amp; sudo apt-get install git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial </p><p>2) 下载源码 git clone <a href="https://git.lede-project.org/source.git">https://git.lede-project.org/source.git</a> </p><p>3)  更新所有包依赖 ./scripts/feeds update -a </p><p>4)  安装所有包依赖 ./scripts/feeds install -a </p><p>5)  检查配置 make defconfig </p><p>6)  修改编译选项 </p><p>我们使用命令make menuconfig会进入一个定制内核的界面， 因为我们使用的是树莓派3B,所以我们需要修改的地方主要有以下3点： . Target System -&gt; Broadcom BCM27xx . SubTarget -&gt; BCM2710 64 bit based boards . Target Profile -&gt; (Raspberry Pi 3) B (64 bit) </p><p>为了确保编译通过，在这里我们其他的暂时不进行修改，保持默认选项即可。修改完的界面如下图：</p><figure class="kg-card kg-image-card"><img src="../content/images/2018/09/custom_kernel.jpg" class="kg-image"></figure><p>使用键盘方向键选择Save保存后即可。</p><p>7) 开始编译 </p><p>make V=s -j4 V=s 表示输出全部编译信息，j4表示使用4个线程。正常情况下，等待1~2个小时，即可完成编译，这是在 source(你的源码更目录) -&gt; bin -&gt; targets -&gt; brcm2708 -&gt; brcm2710目录下会有lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img.gz这个文件。 </p><p>8) 烧录 </p><p>在ubuntu系统下使用dd命令将lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img.gz解压后得到的imagelede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img文件写入到sdcard中。具体命令为 sudo dd if=/home/james/Desktop/lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img of=/dev/sdb bs=4M 将sdcard插回树莓派，开机，正常情况下系统就可以工作起来了，当然这时路由功能其实还没法使用。 </p><p>9) 开机调试 </p><p>使用网线插入树莓派另一端与电脑连接，使用ssh方式连接树莓派，这里我使用PUTTY。然后修改相关文件。 </p><h3 id="1-vim-etc-config-network-">1.修改vim /etc/config/network，将内容改为：</h3><pre><code>    config interface 'loopback' 
+    option ifname 'lo' 
+    option proto 'static' 
+    option ipaddr '127.0.0.1' 
+    option netmask '255.0.0.0'
+    config globals 'globals'
+    option ula_prefix 'fd11:8629:b448::/48'
+    config interface 'lan'
+    option type 'bridge'
+    option ifname 'eth0'
+    option proto 'static'
+    option ipaddr '192.168.2.1'
+    option netmask '255.255.255.0'
+    option ip6assign '60'
+</code></pre><h3 id="2-vim-etc-config-wireless-"><br>2. 同理修改 vim /etc/config/wireless将内容修改为：<br></h3><pre><code>config wifi-device radio0
+        option type     mac80211
+        option channel  11
+        option hwmode   11g
+        option path 'platform/soc/3f300000.mmc/mmc_host/mmc1/mmc1:0001/mmc1:0001:1'
+        option htmode   HT20
+        # REMOVE THIS LINE TO ENABLE WIFI:
+#        option disabled 0
+
+config wifi-iface
+        option device   radio0
+        option network  lan
+        option mode     ap
+        option ssid     [yourname] #这里输入wifi名
+        option encryption psk2
+        option key      [yourwifikey] #这里输入wifi密码 
+</code></pre><h3 id="3-wan-ssh"><br>3. 允许通过wan连接ssh </h3><p>vim /etc/config/firewall修改为：</p><pre><code>#open ssh on wan interface
+config rule                
+        option src              wan
+        option dest_port        22
+        option target           ACCEPT     
+        option proto 
+</code></pre><p>. 安装luci，安装后可以通过浏览器去访问路由<br><code>/etc/init.d/uhttpd start</code><br><code>/etc/init.d/uhttpd enable</code><br>到此就可以访问路由了。重启树莓派，将网线接入路由器，这时候我们查看无线网络应该就可以使用了。</p><p>到时这样配置感觉好麻烦，我们能否在编译之前配置好，编译完烧录进树莓派之后不需要配置任何东西，马上可以使用呢？答案是肯定的，下面我们来实现。</p><p>配置默认设置</p><p>1. 配置luci make menuconfig </p><p><code>LuCI -&gt; 1. Collections -&gt; 选择luci</code><br><code>LuCI -&gt; 1. Collections -&gt; 选择luci-ssl</code></p><p>2. 配置network /home/james/RasPI/source/package/basefiles/files/bin/config_generate修改 </p><pre><code>generate_static_network() {
+    uci -q batch &lt;&lt;-EOF
+        delete network.loopback
+        set network.loopback='interface'
+        set network.loopback.ifname='lo'
+        set network.loopback.proto='static'
+        set network.loopback.ipaddr='127.0.0.1'
+        set network.loopback.netmask='255.0.0.0'
+        delete network.globals
+        set network.globals='globals'
+        set network.globals.ula_prefix='auto'
+        #添加以下设置
+        delete network.wan
+        set network.wan='interface'
+        set network.wan.proto='dhcp'
+        set network.wan.ifname='eth0'
+    EOF
+}
+generate_network() {
+    local ifname macaddr protocol type ipaddr netmask
+
+    json_select network
+        json_select "$1"
+            json_get_vars ifname macaddr protocol ipaddr netmask
+        json_select ..
+    json_select ..
+
+    [ -n "$ifname" ] || return
+
+    # force bridge for multi-interface devices (and lan)
+    case "$1:$ifname" in
+        *\ * | lan:*) type="bridge" ;;
+    esac
+
+    uci -q batch &lt;&lt;-EOF
+        delete network.$1
+        set network.$1='interface'
+        set network.$1.type='$type'
+        set network.$1.proto='none'
+    EOF
+
+    [ -n "$macaddr" ] &amp;&amp; uci -q batch &lt;&lt;-EOF
+        delete network.$1_dev
+        set network.$1_dev='device'
+        set network.$1_dev.name='$ifname'
+        set network.$1_dev.macaddr='$macaddr'
+    EOF
+
+    case "$protocol" in
+        static)
+            local ipad
+            case "$1" in
+                #修改IP地址
+                lan) ipad=${ipaddr:-"192.168.2.1"} ;;
+                *) ipad=${ipaddr:-"192.168.$((addr_offset++)).1"} ;;
+            esac
+
+            netm=${netmask:-"255.255.255.0"}
+
+            uci -q batch &lt;&lt;-EOF
+                #删除ifname选项
+                set network.$1.proto='static'
+                set network.$1.ipaddr='$ipad'
+                set network.$1.netmask='$netm'
+                set network.$1.ip6assign='60'
+            EOF
+        ;;</code></pre><p> </p><p>3. 配置无线网络 /home/james/RasPI/source/package/kernel/mac80211/files/lib/mac80211.sh </p><pre><code>detect_mac80211() {
+    devidx=0
+    config_load wireless
+    while :; do
+        config_get type "radio$devidx" type
+        [ -n "$type" ] || break
+        devidx=$(($devidx + 1))
+    done
+
+    for _dev in /sys/class/ieee80211/*; do
+        [ -e "$_dev" ] || continue
+
+        dev="${_dev##*/}"
+
+        found=0
+        config_foreach check_mac80211_device wifi-device
+        [ "$found" -gt 0 ] &amp;&amp; continue
+
+        mode_band="g"
+        channel="11"
+        htmode=""
+        ht_capab=""
+
+        iw phy "$dev" info | grep -q 'Capabilities:' &amp;&amp; htmode=HT20
+        iw phy "$dev" info | grep -q '2412 MHz' || { mode_band="a"; channel="36"; }
+
+        vht_cap=$(iw phy "$dev" info | grep -c 'VHT Capabilities')
+        cap_5ghz=$(iw phy "$dev" info | grep -c "Band 2")
+        [ "$vht_cap" -gt 0 -a "$cap_5ghz" -gt 0 ] &amp;&amp; {
+            mode_band="a";
+            channel="36"
+            htmode="VHT80"
+        }
+
+        [ -n $htmode ] &amp;&amp; ht_capab="set wireless.radio${devidx}.htmode=$htmode"
+
+        if [ -x /usr/bin/readlink -a -h /sys/class/ieee80211/${dev} ]; then
+            path="$(readlink -f /sys/class/ieee80211/${dev}/device)"
+        else
+            path=""
+        fi
+        if [ -n "$path" ]; then
+            path="${path##/sys/devices/}"
+            case "$path" in
+                platform*/pci*) path="${path##platform/}";;
+            esac
+            dev_id="set wireless.radio${devidx}.path='$path'"
+        else
+            dev_id="set wireless.radio${devidx}.macaddr=$(cat /sys/class/ieee80211/${dev}/macaddress)"
+        fi
+
+        uci -q batch &lt;&lt;-EOF
+            set wireless.radio${devidx}=wifi-device
+            set wireless.radio${devidx}.type=mac80211
+            set wireless.radio${devidx}.channel=${channel}
+            set wireless.radio${devidx}.hwmode=11${mode_band}
+            ${dev_id}
+            ${ht_capab}
+            #设置默认wifi名称、加密方式、密码
+            set wireless.default_radio${devidx}=wifi-iface
+            set wireless.default_radio${devidx}.device=radio${devidx}
+            set wireless.default_radio${devidx}.network=lan
+            set wireless.default_radio${devidx}.mode=ap
+            set wireless.default_radio${devidx}.ssid=Your_RAPI
+            set wireless.default_radio${devidx}.encryption=psk2
+            set wireless.default_radio${devidx}.key=test1234567
+EOF
+        uci -q commit wireless
+
+        devidx=$(($devidx + 1))
+    done
+}  </code></pre><h3 id="4-"><br>4. 配置防火墙</h3><p>/home/james/RasPI/source/package/network/config/firewall/firewall.config</p><pre><code>#open ssh on wan interface
+config rule                
+        option src              wan
+        option dest_port        22
+        option target           ACCEPT     
+        option proto</code></pre><h3 id="5-">5. 修改完以上几个文件，重新编译，然后烧录到树莓派，搞定。</h3><p>开机接上网线，不需要任何设置，就可以畅享无线网络了。你也可以通过浏览器访问路由器主页了。<br>到此就暂时告一段落了。</p>
+                </div>
+            </section>
+
+
+            <footer class="post-full-footer">
+
+
+                    
+<section class="author-card">
+        <img class="author-profile-image" src="../content/images/2018/09/man--1--1.png" alt="James.Li">
+    <section class="author-card-content">
+        <h4 class="author-card-name"><a href="../author/james/">James.Li</a></h4>
+            <p>Read <a href="../author/james/">more posts</a> by this author.</p>
+    </section>
+</section>
+<div class="post-full-footer-right">
+    <a class="author-card-button" href="../author/james/">Read More</a>
+</div>
+
+
+            </footer>
+
+
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+                <article class="read-next-card" style="background-image: url(../content/images/2018/09/fabian-grohs-550489-unsplash.jpg)">
+                    <header class="read-next-card-header">
+                        <small class="read-next-card-header-sitetitle">— 逐梦的脚步 —</small>
+                        <h3 class="read-next-card-header-title"><a href="../tag/za-ji/">杂记</a></h3>
+                    </header>
+                    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
+</div>
+                    <div class="read-next-card-content">
+                        <ul>
+                            <li><a href="../bu-mai-chu-di-yi-bu-na-yao-ni-jiang-yong-yuan-dao-da-bu-liao-di-jiu-shi-jiu-bu/">不迈出第一步，那么你将永远到达不了第九十九步</a></li>
+                            <li><a href="../ghost-da-zao-zi-ji-de-bo-ke-xi-tong/">Ghost 打造自己的博客系统</a></li>
+                        </ul>
+                    </div>
+                    <footer class="read-next-card-footer">
+                        <a href="../tag/za-ji/">See all 2 posts →</a>
+                    </footer>
+                </article>
+
+                <article class="post-card post tag-za-ji">
+        <a class="post-card-image-link" href="../bu-mai-chu-di-yi-bu-na-yao-ni-jiang-yong-yuan-dao-da-bu-liao-di-jiu-shi-jiu-bu/">
+            <div class="post-card-image" style="background-image: url(../content/images/2018/09/sharon-mccutcheon-659776-unsplash.jpg)"></div>
+        </a>
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="../bu-mai-chu-di-yi-bu-na-yao-ni-jiang-yong-yuan-dao-da-bu-liao-di-jiu-shi-jiu-bu/">
+            <header class="post-card-header">
+                    <span class="post-card-tags">杂记</span>
+                <h2 class="post-card-title">不迈出第一步，那么你将永远到达不了第九十九步</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>最近一直在思考一个问题，就是什么时候可以不上班养活自己， 那么就可以开始自己第独立开发之路了。 思考了那么久，可能有大半年了吧。 但是一直没有迈出自己第第一步， 一直拖着，拖着，慢慢的，感觉信心越来越不足， 在这么耗下去，估计今后几年都不会有结果，就如这个博客一样。 荒废了好几年了。 所以，这一次， 我要开始了，迈出神圣的第一步，这样，才有可能达到第九十九步。 浑浑噩噩，度日如年， 不如时时刻刻，奋斗不息， 只有这样， 才会会给自己的未来几年一个交代。 加油吧。骚年！ 梦，永远不会停止。</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        James.Li
+                    </div>
+
+                        <a href="../author/james/" class="static-avatar"><img class="author-profile-image" src="../content/images/2018/09/man--1--1.png" alt="James.Li"></a>
+                </li>
+            </ul>
+
+            <span class="reading-time">1 min read</span>
+
+        </footer>
+    </div>
+</article>
+
+                <article class="post-card post tag-za-ji">
+        <a class="post-card-image-link" href="../ghost-da-zao-zi-ji-de-bo-ke-xi-tong/">
+            <div class="post-card-image" style="background-image: url(../content/images/2018/09/tim-mossholder-666762-unsplash-1.jpg)"></div>
+        </a>
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="../ghost-da-zao-zi-ji-de-bo-ke-xi-tong/">
+            <header class="post-card-header">
+                    <span class="post-card-tags">杂记</span>
+                <h2 class="post-card-title">Ghost 打造自己的博客系统</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>1. 安装工具a 安装pip 通过命令 brew install pipb 安装NodeJS 通过命令 brew install nodec 安装Buster 通过命令 pip install buster (Buster主要用于生成static静态页面，提交到GitHub，使得可以访问)2. 下载Ghost文件，解压进入目录a 执行命令 npm install b 执行命令 npm startc 现在你可以打开网页输入地址 http://localhost:</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        James.Li
+                    </div>
+
+                        <a href="../author/james/" class="static-avatar"><img class="author-profile-image" src="../content/images/2018/09/man--1--1.png" alt="James.Li"></a>
+                </li>
+            </ul>
+
+            <span class="reading-time">1 min read</span>
+
+        </footer>
+    </div>
+</article>
+
+        </div>
+    </div>
+</aside>
+
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="../">
+                <img src="../content/images/2018/09/man--1-.png" alt="逐梦的脚步 icon">
+            <span>逐梦的脚步</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">—</span>
+    <div class="floating-header-title">编译OpenWrt烧录树莓派3B</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%E7%BC%96%E8%AF%91OpenWrt%E7%83%A7%E5%BD%95%E6%A0%91%E8%8E%93%E6%B4%BE3B&amp;url=http://localhost:2368/bian-yi-openwrtshao-lu-shu-mei-pai-3b/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/bian-yi-openwrtshao-lu-shu-mei-pai-3b/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+        </a>
+    </div>
+    <progress id="reading-progress" class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="../">逐梦的脚步</a> © 2018</section>
+                <nav class="site-footer-nav">
+                    <a href="../">Latest Posts</a>
+                    <a href="https://www.facebook.com/ghost" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/tryghost" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=9138b390ef"></script>
+
+
+    <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('#reading-progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+
+});
+</script>
+
+
+    
+
+</body>
