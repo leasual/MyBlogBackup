@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>逐梦的脚步</title><description>竹杖芒鞋轻胜马，谁怕？</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>逐梦的脚步</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Sun, 30 Sep 2018 03:42:41 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>铸以恒切喜乐,苦以坚忍,必有所得</title><description>&lt;p&gt;[必然的阶段]&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>逐梦的脚步</title><description>竹杖芒鞋轻胜马，谁怕？</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>逐梦的脚步</title><link>http://localhost:2368/</link></image><generator>Ghost 2.1</generator><lastBuildDate>Sun, 28 Apr 2019 11:24:22 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>铸以恒切喜乐,苦以坚忍,必有所得</title><description>&lt;p&gt;[必然的阶段]&lt;/p&gt;
 &lt;p&gt;年纪渐大的程序员都会面临一个问题，&lt;br&gt;
 那就是，如果一直做开发，还可以做多久的问题。&lt;/p&gt;
 &lt;p&gt;虽然随着工作年限的增长，经验也越发丰富，&lt;br&gt;
@@ -77,35 +77,6 @@
 3.成熟期：考虑收入&lt;br&gt;
 4.PC端用户成为这一阶段独角兽产品的关键点&lt;br&gt;
 5.只为App而生的产品找到独特的卖点是关键&lt;/p&gt;
-</content:encoded></item><item><title>不迈出第一步，那么你将永远到达不了第九十九步</title><description>&lt;p&gt;最近一直在思考一个问题，就是什么时候可以不上班养活自己，&lt;br&gt;
-那么就可以开始自己第独立开发之路了。&lt;br&gt;
-思考了那么久，可能有大半年了吧。&lt;br&gt;
-但是一直没有迈出自己第第一步，&lt;br&gt;
-一直拖着，拖着，慢慢的，感觉信心越来越不足，&lt;br&gt;
-在这么耗下去，估计今后几年都不会有结果，就如这个博客一样。&lt;br&gt;
-荒废了好几年了。&lt;br&gt;
-所以，这一次，&lt;br&gt;
-我要开始了，迈出神圣的第一步，这样，才有可能达到第九十九步。&lt;br&gt;
-浑浑噩噩，度日如年，&lt;br&gt;
-不如时时刻刻，奋斗不息，&lt;br&gt;
-只有这样，&lt;br&gt;
-才会会给自己的未来几年一个交代。&lt;br&gt;
-加油吧。骚年！&lt;br&gt;
-梦，永远不会停止。&lt;/p&gt;</description><link>http://localhost:2368/bu-mai-chu-di-yi-bu-na-yao-ni-jiang-yong-yuan-dao-da-bu-liao-di-jiu-shi-jiu-bu/</link><guid isPermaLink="false">5bae2dc79d96bc031390d9af</guid><category>杂记</category><dc:creator>James.Li</dc:creator><pubDate>Wed, 26 Sep 2018 07:31:05 GMT</pubDate><media:content url="http://localhost:2368/content/images/2018/09/sharon-mccutcheon-659776-unsplash.jpg" medium="image"/><content:encoded>&lt;img src="http://localhost:2368/content/images/2018/09/sharon-mccutcheon-659776-unsplash.jpg" alt="不迈出第一步，那么你将永远到达不了第九十九步"&gt;&lt;p&gt;最近一直在思考一个问题，就是什么时候可以不上班养活自己，&lt;br&gt;
-那么就可以开始自己第独立开发之路了。&lt;br&gt;
-思考了那么久，可能有大半年了吧。&lt;br&gt;
-但是一直没有迈出自己第第一步，&lt;br&gt;
-一直拖着，拖着，慢慢的，感觉信心越来越不足，&lt;br&gt;
-在这么耗下去，估计今后几年都不会有结果，就如这个博客一样。&lt;br&gt;
-荒废了好几年了。&lt;br&gt;
-所以，这一次，&lt;br&gt;
-我要开始了，迈出神圣的第一步，这样，才有可能达到第九十九步。&lt;br&gt;
-浑浑噩噩，度日如年，&lt;br&gt;
-不如时时刻刻，奋斗不息，&lt;br&gt;
-只有这样，&lt;br&gt;
-才会会给自己的未来几年一个交代。&lt;br&gt;
-加油吧。骚年！&lt;br&gt;
-梦，永远不会停止。&lt;/p&gt;
 </content:encoded></item><item><title>编译OpenWrt烧录树莓派3B</title><description>&lt;p&gt;编译OpenWrt-LEDE版本&lt;br&gt;在OpenWRT 15.05以后已经更换为LEDE。&lt;br&gt;编译环境&lt;br&gt;Ubuntu 16.04&lt;br&gt;设备&lt;br&gt;树莓派3 Mode B一个&lt;br&gt;编译&lt;/p&gt;&lt;p&gt;1) 准备环境 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial &lt;/p&gt;&lt;p&gt;2) 下载源码 git clone &lt;a href="https://git.lede-project.org/source.git"&gt;https://git.lede-project.org/source.git&lt;/a&gt; &lt;/p&gt;&lt;p&gt;3)  更新所有包依赖 ./scripts/feeds update -a &lt;/p&gt;&lt;p&gt;4)  安装所有包依赖 ./scripts/feeds&lt;/p&gt;</description><link>http://localhost:2368/bian-yi-openwrtshao-lu-shu-mei-pai-3b/</link><guid isPermaLink="false">5bae2dc79d96bc031390d9ae</guid><category>杂记</category><dc:creator>James.Li</dc:creator><pubDate>Wed, 19 Jul 2017 06:44:00 GMT</pubDate><media:content url="http://localhost:2368/content/images/2018/09/diego-jimenez-258120-1.jpg" medium="image"/><content:encoded>&lt;img src="http://localhost:2368/content/images/2018/09/diego-jimenez-258120-1.jpg" alt="编译OpenWrt烧录树莓派3B"&gt;&lt;p&gt;编译OpenWrt-LEDE版本&lt;br&gt;在OpenWRT 15.05以后已经更换为LEDE。&lt;br&gt;编译环境&lt;br&gt;Ubuntu 16.04&lt;br&gt;设备&lt;br&gt;树莓派3 Mode B一个&lt;br&gt;编译&lt;/p&gt;&lt;p&gt;1) 准备环境 sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install git-core build-essential libssl-dev libncurses5-dev unzip subversion mercurial &lt;/p&gt;&lt;p&gt;2) 下载源码 git clone &lt;a href="https://git.lede-project.org/source.git"&gt;https://git.lede-project.org/source.git&lt;/a&gt; &lt;/p&gt;&lt;p&gt;3)  更新所有包依赖 ./scripts/feeds update -a &lt;/p&gt;&lt;p&gt;4)  安装所有包依赖 ./scripts/feeds install -a &lt;/p&gt;&lt;p&gt;5)  检查配置 make defconfig &lt;/p&gt;&lt;p&gt;6)  修改编译选项 &lt;/p&gt;&lt;p&gt;我们使用命令make menuconfig会进入一个定制内核的界面， 因为我们使用的是树莓派3B,所以我们需要修改的地方主要有以下3点： . Target System -&amp;gt; Broadcom BCM27xx . SubTarget -&amp;gt; BCM2710 64 bit based boards . Target Profile -&amp;gt; (Raspberry Pi 3) B (64 bit) &lt;/p&gt;&lt;p&gt;为了确保编译通过，在这里我们其他的暂时不进行修改，保持默认选项即可。修改完的界面如下图：&lt;/p&gt;&lt;figure class="kg-card kg-image-card"&gt;&lt;img src="http://localhost:2368/content/images/2018/09/custom_kernel.jpg" class="kg-image" alt="编译OpenWrt烧录树莓派3B"&gt;&lt;/figure&gt;&lt;p&gt;使用键盘方向键选择Save保存后即可。&lt;/p&gt;&lt;p&gt;7) 开始编译 &lt;/p&gt;&lt;p&gt;make V=s -j4 V=s 表示输出全部编译信息，j4表示使用4个线程。正常情况下，等待1~2个小时，即可完成编译，这是在 source(你的源码更目录) -&amp;gt; bin -&amp;gt; targets -&amp;gt; brcm2708 -&amp;gt; brcm2710目录下会有lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img.gz这个文件。 &lt;/p&gt;&lt;p&gt;8) 烧录 &lt;/p&gt;&lt;p&gt;在ubuntu系统下使用dd命令将lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img.gz解压后得到的imagelede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img文件写入到sdcard中。具体命令为 sudo dd if=/home/james/Desktop/lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img of=/dev/sdb bs=4M 将sdcard插回树莓派，开机，正常情况下系统就可以工作起来了，当然这时路由功能其实还没法使用。 &lt;/p&gt;&lt;p&gt;9) 开机调试 &lt;/p&gt;&lt;p&gt;使用网线插入树莓派另一端与电脑连接，使用ssh方式连接树莓派，这里我使用PUTTY。然后修改相关文件。 &lt;/p&gt;&lt;h3 id="1-vim-etc-config-network-"&gt;1.修改vim /etc/config/network，将内容改为：&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;    config interface 'loopback' 
     option ifname 'lo' 
     option proto 'static' 
